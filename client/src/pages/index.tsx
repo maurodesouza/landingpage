@@ -17,9 +17,11 @@ import JsonSchema from 'components/JsonSchema'
 import client from 'graphql/client'
 import GET_LANDING_PAGE from 'graphql/queries/getLandingPage'
 
-const Index = () => (
+import { LandingPageProps } from 'types/api'
+
+const Index = ({ logo }: LandingPageProps) => (
   <>
-    <SectionHero />
+    <SectionHero logo={logo} />
     <SectionAboutProject />
     <SectionTech />
     <SectionConcepts />
