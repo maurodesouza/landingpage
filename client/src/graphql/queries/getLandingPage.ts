@@ -65,6 +65,13 @@ const query = `
     }
   }
 
+  fragment sectionAgenda on LandingPage {
+    sectionAgenda {
+      title
+      description
+    }
+  }
+
   query GET_LANDING_PAGE {
     landingPage {
       ...logo
@@ -73,6 +80,7 @@ const query = `
       ...sectionTech
       ...sectionConcepts
       ...sectionModules
+      ...sectionAgenda
     }
   }
 `
