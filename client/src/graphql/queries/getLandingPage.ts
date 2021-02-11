@@ -85,6 +85,25 @@ const query = `
     }
   }
 
+  fragment sectionAboutUs on LandingPage {
+    sectionAboutUs {
+      title
+      authors {
+        photo {
+          alternativeText
+          url
+        }
+        name
+        role
+        description
+        socialLinks {
+          title
+          url
+        }
+      }
+    }
+  }
+
   query GET_LANDING_PAGE {
     landingPage {
       ...logo
@@ -95,6 +114,7 @@ const query = `
       ...sectionModules
       ...sectionAgenda
       ...pricingBox
+      ...sectionAboutUs
     }
   }
 `

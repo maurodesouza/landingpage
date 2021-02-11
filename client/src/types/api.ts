@@ -65,6 +65,24 @@ export type PricingBoxProps = {
   button: ButtonProps
 }
 
+type SocialLinkProps = {
+  title: string
+  url: string
+}
+
+export type AuthorProps = {
+  photo: LogoProps
+  name: string
+  role: string
+  description: string
+  socialLinks: SocialLinkProps[]
+}
+
+export type SectionAboutUsProps = {
+  title: string
+  authors: AuthorProps[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -74,4 +92,5 @@ export type LandingPageProps = {
   sectionModules: SectionModulesProps
   sectionAgenda: SectionAgendaProps
   pricingBox: PricingBoxProps
+  sectionAboutUs: SectionAboutUsProps
 }
