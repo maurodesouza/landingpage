@@ -118,6 +118,16 @@ const query = `
     }
   }
 
+  fragment sectionFaq on LandingPage {
+    sectionFaq {
+      title
+      questions {
+        question
+        answer
+      }
+    }
+  }
+
   query GET_LANDING_PAGE {
     landingPage {
       ...logo
@@ -130,6 +140,7 @@ const query = `
       ...pricingBox
       ...sectionAboutUs
       ...sectionReviews
+      ...sectionFaq
     }
   }
 `

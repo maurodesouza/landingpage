@@ -94,6 +94,16 @@ export type SectionReviewsProps = {
   reviews: ReviewProps[]
 }
 
+type QuestionProps = {
+  question: string
+  answer: string
+}
+
+export type SectionFaqProps = {
+  title: string
+  questions: QuestionProps[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -105,4 +115,5 @@ export type LandingPageProps = {
   pricingBox: PricingBoxProps
   sectionAboutUs: SectionAboutUsProps
   sectionReviews: SectionReviewsProps
+  sectionFaq: SectionFaqProps
 }
