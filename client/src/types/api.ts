@@ -83,6 +83,17 @@ export type SectionAboutUsProps = {
   authors: AuthorProps[]
 }
 
+type ReviewProps = {
+  name: string
+  text: string
+  photo: LogoProps
+}
+
+export type SectionReviewsProps = {
+  title: string
+  reviews: ReviewProps[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -93,4 +104,5 @@ export type LandingPageProps = {
   sectionAgenda: SectionAgendaProps
   pricingBox: PricingBoxProps
   sectionAboutUs: SectionAboutUsProps
+  sectionReviews: SectionReviewsProps
 }
